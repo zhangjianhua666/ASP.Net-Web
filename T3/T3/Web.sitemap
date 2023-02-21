@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="t3-1.aspx" title="首页"  description="">
+    <siteMapNode url="t3-2.aspx" title="头像处理"  description="" />
+  </siteMapNode>
+</siteMap>

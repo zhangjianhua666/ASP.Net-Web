@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="T3.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="Content/StyleSheet1.css" rel="stylesheet" type="text/css"/>
+   
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header class="header">
+            <div id="top_logo"></div>
+            <div id="top_links">
+                <div id="top_op">
+                    <ul>
+<li>
+    <img src="Img/user.jpg" alt="当前用户" />
+    <asp:Label ID="ibiUser" runat="server" Text=""></asp:Label>
+
+</li>
+
+<li> 
+    <img src="Img/month.jpg" alt="事物月份" />
+    <span id="yue_fen">****</span>
+</li>
+<li>
+    <img src="Img/date.jpg" alt="今天是" />
+     <span id="day_day">******</span>
+</li>
+</ul>
+                </div>
+                <div id="top_close">
+                    <a href="javascript;void(0);" target="_parent">
+                        <img src="Img/close.jpg" alt="退出系统" title="退出系统" style="position:relative;top:10px;left:25px;"/>
+
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="main">
+            <aside class="menu">
+                <asp:TreeView ID="TreeView1" runat="server" DataSourceID="XmlDataSource1" ImageSet="Arrows">
+                    <DataBindings>
+                        <asp:TreeNodeBinding DataMember="siteMapNode" NavigateUrlField="url" TextField="title" />
+                    </DataBindings>
+                    <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                    <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+                    <ParentNodeStyle Font-Bold="False" />
+                    <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" HorizontalPadding="0px" VerticalPadding="0px" />
+                </asp:TreeView>
+                <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="~/XMLFile1.xml"></asp:XmlDataSource>
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+            </aside>
+            <article class="content"> 
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            </article>
+          
+        </div>
+    </form>
+</body>
+</html>
