@@ -24,7 +24,8 @@ namespace T3
                 }
                 else
                 {
-                    Response.Redirect("t3-2.aspx");
+                    string enUser = Server.UrlEncode(txtUser.Text);
+                    Response.Redirect("t3-2.aspx?user="+Server.UrlEncode(enUser));
                 }
             }
         }

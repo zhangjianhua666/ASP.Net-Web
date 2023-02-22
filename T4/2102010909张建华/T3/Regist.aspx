@@ -11,8 +11,9 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <h3>用户注册</h3>
               <ul>
-                 <h3>用户注册</h3>
+                 
                 <li class="login-item"><span>用户名：</span>
                     <asp:TextBox ID="textUser" runat="server" class="login-input" ></asp:TextBox>
 

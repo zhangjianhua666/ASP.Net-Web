@@ -13,7 +13,7 @@
             </li>
              <li class="logoin-sub"> 
 
-                 <asp:Button ID="butOk" runat="server" Text="上传" OnClick="butOk_Click1" />
+                 <asp:Button ID="butOk" runat="server" Text="上传" OnClick="butOk_Click1" Width="132px" />
 
              </li>
              <li class="logoin-item"> 

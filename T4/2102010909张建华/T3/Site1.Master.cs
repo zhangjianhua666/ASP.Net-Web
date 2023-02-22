@@ -11,7 +11,14 @@ namespace T3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                if (Request.QueryString["user"] != null)
+                {
+                    string deUser = Server.UrlDecode(Request.QueryString["user"]);
+                    ibiUser.Text = deUser;
+                }
+            }
         }
     }
 }
