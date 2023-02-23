@@ -1,0 +1,75 @@
+﻿ol, ul, li {
+    list-style: none
+}
+
+.loginwarrp {
+    margin: 50px auto;
+    width: 400px;
+    padding: 30px 50px;
+    background: #ffffff;
+    overflow: hidden;
+    font-size: 14px;
+    font-family: '微软雅黑','文泉驿正体','黑体';
+}
+
+  .logo {
+        width: 100%;
+        height: 10%;
+        line-height: 44px;
+        font-size: 20px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+  .login-form {
+        margin-top: 15px;
+    }
+
+  .login-form .login-item {
+            padding: 2px 8px;
+            border: 1px solid #dedede;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+  .login-form .login-input {
+            height: 35px;
+            border: none;
+            line-height: 35px;
+            width: 200px;
+            font-size: 14px;
+            outline: none;
+        }
+
+  .login-form .verify {
+            float: left;
+        }
+
+  .verify .verify-input {
+        width: 160px;
+    }
+
+   .verifyimg {
+        height: 30px;
+        margin: 20px 0 0 20px;
+    }
+
+ .login-sub {
+        text-align: center;
+    }
+ .login-sub input {
+            margin-top: 15px;
+            background: #45b549;
+            line-height: 35px;
+            width: 150px;
+            color: #ffffff;
+            font-size: 16px;
+            font-family: '微软雅黑','文泉驿正体','黑体';
+            border: none;
+            border-radius: 5px;
+        }
+
+ .login-form .login-item .error {
+        color: #fff;
+        font-family: '微软雅黑','文泉驿正体','黑体';
+    }

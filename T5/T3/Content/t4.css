@@ -1,0 +1,62 @@
+﻿body {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.login_form {
+    margin-top: 15px;
+}
+
+.login-item {
+    padding: 2px 8px;
+    border: 1px solid #dedede;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.login-item, .login-sub {
+    list-style: none;
+}
+
+.login-input {
+    height: 35px;
+    border: none;
+    line-height: 35px;
+    width: 200px;
+    font-size: 14px;
+    outline: none;
+}
+
+.verify {
+    float: left;
+}
+
+.verify_input {
+    width: 160px;
+}
+
+.verifyimg {
+    height: 30px;
+    margin: 20px 0 0 20px;
+}
+
+.login-sub {
+    text-align: center;
+}
+
+    .login-sub input {
+        margin-top: 15px;
+        background: #45b549;
+        line-height: 35px;
+        width: 150px;
+        color: #ffffff;
+        font-size: 16px;
+        font-family: '微软雅黑','文泉驿正黑','黑体';
+        border: none;
+        border-radius: 5px;
+    }
+
+.error {
+    color: #f00;
+    font-family: '微软雅黑','文泉驿正黑','黑体';
+}
